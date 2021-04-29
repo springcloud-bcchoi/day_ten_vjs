@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <h1>RAndom Number Game</h1>
+    <h3>Generate a number between 0 and <span id="js-max"></span></h3>
+    <div>
+      <input
+        class="js-range"
+        type="range"
+        value="20"
+        step="5"
+        min="0"
+        max="250"
+      />
+    </div>
+    <span>Guess the number: </span>
+    <input class="js-num-box" type="number" min="0" max="250" />
+    <input class="js-play-btn" type="button" value="Play!" />
+    <div class="js-status" style="display: none;">
+      <span
+        >You chose: <span id="js-you"></span>, the machine chose:
+        <span id="js-machine"></span>
+      </span>
+    </div>
+    <span class="js-result" style="font-weight: bold; display: none;"
+      >You lost!</span
+    >
+    <script src="src/index.js"></script>
+  </body>
+</html>
